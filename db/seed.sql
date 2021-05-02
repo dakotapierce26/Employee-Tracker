@@ -1,4 +1,4 @@
-INSERT INTO `cms`.`department`
+INSERT INTO `cms`.`deparment`
 (`name`)
 
 VALUES
@@ -7,41 +7,38 @@ VALUES
 ('Finance'),
 ('Engineering');
 
-
 INSERT INTO `cms`.`role`
 (`title`,
 `salary`,
-`deparment_id`)
+`department_id`)
 
 VALUES
 ('Sales Lead', 100000, 1),
-('Salesperson', 100000, 1),
-('Lead Engineer', 100000, 4),
-('Software Engineer', 100000, 4),
-('Accountant', 100000, 3),
-('Legal Team Lead', 158000, 2),
-('Lawyer', 1200000, 2);
+('Software Engineer', 1000000000, 4),
+('Accountant', 1000, 3),
+('Lawyer', 10000000, 2),
+('Salesperson', 10, 1);
+
 
 INSERT INTO `cms`.`employee`
-(`last_name`,
-`first_name`,
+(`first_name`,
+`last_name`,
 `role_id`,
 `manager_id`)
+
 VALUES
-('Doe', 'John', 25, NULL),
-('Chan', 'Mike', 26, NULL),
-('Rodriquez', 'Ashley', 27, NULL),
-('Tupik', 'Kevin', 28, NULL),
-('Brown', 'Malia', 29, NULL),
-('Lourd', 'Sarah', 30, NULL),
-('Allen', 'Tom', 31, NULL),
-('Gala', 'Tammer', 28, NULL);
+('Mike', 'Chan', 11, NULL),
+('Chan', 'Chan', 12, NULL),
+('Chin', 'Chan', 13, NULL),
+('Chong', 'Chan', 14, NULL),
+('Mikey', 'Mike', 15, NULL);
 
 INSERT INTO `cms`.`employee`
-(`last_name`,
-`first_name`,
+(`first_name`,
+`last_name`,
 `role_id`,
 `manager_id`)
+
 VALUES
-('Herbert', 'Shawn', 26, 17),
-('Indiana', 'Jones', 26, 17);
+('Main', 'Mikey', 11, 1),
+('Chan', 'channn', 12, 1);
